@@ -1,0 +1,11 @@
+#!/usr/bin/env python
+
+import os, sys
+
+if len(sys.argv) != 3:
+    print('lvs: You must specify two netlist filenames to compare.')
+    sys.exit(1)
+
+os.system('netgen -batch lvs {} {} /foss/pdks/volare/sky130/versions/bdc9412b3e468c102d01b7cf6337be06ec6e9c9a/sky130A/libs.tech/netgen/sky130A_setup.tcl'.format(sys.argv[1], sys.argv[2]))
+sys.exit(0)
+
