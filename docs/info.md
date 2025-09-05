@@ -11,6 +11,8 @@ You can also include images in this folder and reference them in the markdown. E
 
 Analog PLL targeted for 2.4GHz output, with a BGR circuit for the charge pump component.
 
+You can find detailed design process in here: https://jyblue1001.github.io/
+
 ## How to test
 
 1. Connect OUT_FREQ to a multimeter, as the initial control voltage is 0V, it should be naturally outputting a 2.18GHz signal.
