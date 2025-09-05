@@ -34,6 +34,7 @@ MACRO tt_um_jyblue1001_pll
   PIN ua[0]
     DIRECTION INOUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 0.450000 ;
     PORT
       LAYER met4 ;
         RECT 151.810 0.000 152.710 1.000 ;
@@ -42,6 +43,8 @@ MACRO tt_um_jyblue1001_pll
   PIN ua[1]
     DIRECTION INOUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 0.705000 ;
+    ANTENNADIFFAREA 1.200000 ;
     PORT
       LAYER met4 ;
         RECT 132.490 0.000 133.390 1.000 ;
@@ -431,6 +434,34 @@ MACRO tt_um_jyblue1001_pll
         RECT 4.000 5.000 6.000 220.760 ;
     END
   END VGND
+  OBS
+      LAYER nwell ;
+        RECT 41.125 9.200 126.790 98.665 ;
+      LAYER li1 ;
+        RECT 41.305 9.300 126.590 98.500 ;
+      LAYER met1 ;
+        RECT 42.240 6.300 132.390 98.500 ;
+      LAYER met2 ;
+        RECT 37.290 6.100 152.640 99.450 ;
+      LAYER met3 ;
+        RECT 0.990 6.100 152.640 160.550 ;
+      LAYER met4 ;
+        RECT 0.990 44.000 1.000 45.200 ;
+        RECT 0.990 34.850 1.000 36.050 ;
+        RECT 0.990 27.450 1.000 28.650 ;
+        RECT 0.990 17.950 1.000 19.150 ;
+        RECT 3.400 4.600 3.600 100.900 ;
+        RECT 6.400 4.600 152.640 100.900 ;
+        RECT 0.990 1.400 152.640 4.600 ;
+        RECT 0.990 1.000 16.170 1.400 ;
+        RECT 17.870 1.000 35.490 1.400 ;
+        RECT 37.190 1.000 54.810 1.400 ;
+        RECT 56.510 1.000 74.130 1.400 ;
+        RECT 75.830 1.000 93.450 1.400 ;
+        RECT 95.150 1.000 112.770 1.400 ;
+        RECT 114.470 1.000 132.090 1.400 ;
+        RECT 133.790 1.000 151.410 1.400 ;
+  END
 END tt_um_jyblue1001_pll
 END LIBRARY
 
